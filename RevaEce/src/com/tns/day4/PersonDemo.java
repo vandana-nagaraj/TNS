@@ -1,37 +1,35 @@
 package com.tns.day4;
-import java.util.*;
+
+import java.util.Scanner;
 
 public class PersonDemo {
 
 	public static void main(String[] args) {
 		
-		
-		Person obj=new Person();
-		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Name:");
-		String name = sc.nextLine();
-		
-		System.out.println("Gender:");
-		String gender = sc.next();
-		
-		System.out.println("Income:");
-		int income = sc.nextInt();
-		System.out.println("Age:");
-		int age = sc.nextInt();
-		//System.out.println("Tax:");
-		//int tax = sc.nextInt();
-		
+		Person  obj = new  Person ();
+		String name,gender;
+		int income,age;
+		Scanner ob = new Scanner(System.in);
+		System.out.println("Enter Person Name : ");
+		name = ob.next();
+		System.out.println("Enter age: ");
+		age = ob.nextInt();
+		System.out.println("Enter gender: ");
+		gender = ob.next();
+		System.out.println("Enter taxable income: ");
+		income = ob.nextInt();
+				
+		obj.setName(name);
 		obj.setAge(age);
 		obj.setGender(gender);
 		obj.setIncome(income);
-		obj.setName(name);
-		//obj.setTax(tax);
-		
+				
+		// System.out.println(obj);
+		TaxCalculation  tax = new TaxCalculation ();
+		tax.calculateTax(obj );
 		System.out.println(obj);
-		
-		sc.close();
+		ob.close();
+
 	}
 
 }

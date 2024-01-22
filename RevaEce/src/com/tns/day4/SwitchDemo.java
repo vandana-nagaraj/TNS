@@ -1,30 +1,31 @@
 package com.tns.day4;
-import java.util.*;
 
 public class SwitchDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number:");
-		int n = sc.nextInt();
-		switch(n)
+		char x = 'z';
+		switch (x) 
 		{
-		case 1:
-			System.out.println("n is 1");
+		case 'l' : 
+		case 'L' : 
+			System.out.println(x+" is a Letter");
 			break;
-		case 2:
-			System.out.println("n is 2");
+		case 'd':
+		case 'D' :
+			System.out.println(x+" is a Digit");
 			break;
-		case 3:
-			System.out.println("n is 3");
+		case 'w':
+		case 'W' :	
+			System.out.println(x+" is White Space");
 			break;
+		case 's':
+		case 'S':
+			System.out.println(x+" is Special Symbol");
 		default:
-			System.out.println("None of the above");
+			System.out.println(x+" is other than letter, digit, space or special symbol ");
+			break;
 		}
-		sc.close();
-		
-
 	}
 
 }
