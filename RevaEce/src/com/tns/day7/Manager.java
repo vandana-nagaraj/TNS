@@ -1,19 +1,23 @@
 package com.tns.day7;
 
-public class Manager {
-	
+
+
+//Subclass inheriting from Employee
+public class Manager extends Employee {
 	private int teamSize;
 
+	// constructors
 	public Manager() {
 		super();
-		// TODO Auto-generated constructor stub
+
 	}
 
-	public Manager(int teamSize) {
-		super();
+	public Manager(String name, int employeeId, String department, int teamSize) {
+		super(name, employeeId, department);
 		this.teamSize = teamSize;
 	}
 
+	// getter/setter methods
 	public int getTeamSize() {
 		return teamSize;
 	}
@@ -24,8 +28,8 @@ public class Manager {
 
 	@Override
 	public String toString() {
-		return "Manager [teamSize=" + teamSize + "]";
+		return "Manager [TeamSize=" + teamSize + ", Name=" + getName() + ", EmployeeId=" + getEmployeeId()
+				+ ", Department=" + getDepartment() + "]";
 	}
-	
 
 }

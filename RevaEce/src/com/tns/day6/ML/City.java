@@ -1,8 +1,10 @@
 package com.tns.day6.ML;
 
 public class City extends State{
+	
 	private String cityName;
 	private float area;
+	
 	public String getCityName() {
 		return cityName;
 	}

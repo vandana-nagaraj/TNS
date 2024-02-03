@@ -1,41 +1,53 @@
 package com.tns.day7;
 
-public class Employee extends Manager{
-	private String EName;
-	private int Eid;
-	private String field;
+
+//Superclass
+public class Employee {
+	private String name;
+	private int employeeId;
+	private String department;
+
+	// constructors
 	public Employee() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
-	public Employee(String eName, int eid, String field) {
+
+	public Employee(String name, int employeeId, String department) {
 		super();
-		EName = eName;
-		Eid = eid;
-		this.field = field;
+		this.name = name;
+		this.employeeId = employeeId;
+		this.department = department;
+
 	}
-	public String getEName() {
-		return EName;
+
+	// getter/setter methods
+	public String getName() {
+		return name;
 	}
-	public void setEName(String eName) {
-		EName = eName;
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	public int getEid() {
-		return Eid;
+
+	public int getEmployeeId() {
+		return employeeId;
 	}
-	public void setEid(int eid) {
-		Eid = eid;
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
 	}
-	public String getField() {
-		return field;
+
+	public String getDepartment() {
+		return department;
 	}
-	public void setField(String field) {
-		this.field = field;
+
+	public void setDepartment(String department) {
+		this.department = department;
 	}
+
 	@Override
 	public String toString() {
-		return "Employee [EName=" + EName + ", Eid=" + Eid + ", field=" + field + "]";
+		return "Employee [Name=" + name + ", EmployeeId=" + employeeId + ", Department=" + department + "]";
 	}
-	
-	
+
 }

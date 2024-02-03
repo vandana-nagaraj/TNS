@@ -11,6 +11,7 @@ public class Mutilevel {
 		city.setStateLanguage("Kannada");
 		city.setCountryName("India");
 		city.setCapital("Dehli");
+		System.out.println(city);
 	}
 
 }

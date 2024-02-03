@@ -12,6 +12,7 @@ public class PersonDemo {
 		System.out.println(p);
 		
 		Base B1 = new Base();
+		B1.varPublic=100;
 		B1.methodPublic();
 	}
 

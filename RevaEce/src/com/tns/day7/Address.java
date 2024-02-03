@@ -5,10 +5,12 @@ public class Address {
 	private String city;
 	private String state;
 	private String postalCode;
+	
 	public Address() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 	public Address(String street, String city, String state, String postalCode) {
 		super();
 		this.street = street;
